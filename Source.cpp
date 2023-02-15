@@ -35,9 +35,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam)
 			DWORD dwSize = GetWindowTextLength(hEdit3);
 			LPWSTR lpszMessage = (LPWSTR)GlobalAlloc(0, sizeof(WCHAR) * (dwSize + 1));
 			GetWindowText(hEdit3, lpszMessage, dwSize + 1);
-
 			// ここに投稿用の処理を記述
-
 
 			GlobalFree(lpszMessage);
 		}
